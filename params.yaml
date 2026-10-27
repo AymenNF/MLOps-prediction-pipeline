@@ -1,0 +1,17 @@
+data:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  C: 1.0
+  max_iter: 1000
+
+# Minimum test accuracy required for the model to be saved (quality gate).
+min_accuracy: 0.9
+
+paths:
+  model: models/model.joblib
+  metrics: models/metrics.json
+
+mlflow:
+  experiment: breast-cancer-classifier
